@@ -1,0 +1,108 @@
+/* Quiz.css */
+
+/* General styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #b5b5b588;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column; /* Adjust to column layout */
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    min-height: 100vh; /* Ensure container takes full height of viewport */
+    padding: 20px; /* Add padding around the container */
+}
+
+.title {
+    margin: 0; /* Remove margin */
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    align-self: flex-start; /* Align title to the left corner */
+    margin-bottom: 20px; /* Add margin below the title */
+    display: flex; /* Use flexbox to align items */
+    align-items: center; /* Align items vertically */
+}
+
+.logo {
+    width: 150px; /* Adjust logo width */
+    height: 100px; /* Adjust logo height */
+    margin-right: 10px; /* Add margin between logo and title */
+}
+
+.subtitle {
+    margin-bottom: 20px; /* Add margin bottom */
+    font-size: 18px; /* Adjust font size */
+    color: #666; /* Set subtitle color */
+}
+
+.content-container {
+    display: flex;
+    flex-direction: row; /* Adjust to row layout */
+    justify-content: center; /* Center the content horizontally */
+    width: calc(100% - 40px); /* Calculate the width with padding */
+    max-width: 1200px; /* Limit content container width */
+}
+
+.sidebar {
+    width: 200px;
+    padding: 20px;
+    background-color: #474747; /* Change navbar color to black */
+    color: #fff; /* Change text color to white */
+    margin-right: 20px; /* Add margin to create space between sidebar and content */
+    border-radius: 10px; /* Curve the edges of the navbar */
+}
+
+.quiz-container {
+    flex-grow: 1; /* Allow questions container to grow and fill remaining space */
+    padding: 20px;
+}
+
+.question-container {
+    background-color: #e6f2ff; /* Light blue background color */
+    border-radius: 20px; /* Add border radius to the question container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    overflow: hidden; /* Ensure content doesn't overflow rounded corners */
+}
+
+.question-content {
+    padding: 20px;
+}
+
+.options {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-between; /* Add space between options */
+    flex-wrap: wrap; /* Allow options to wrap to the next line */
+}
+
+.option {
+    width: calc(50% - 10px); /* Set width for each option */
+    margin-bottom: 10px;
+}
+
+.option input[type="radio"] {
+    margin-right: 5px; /* Adjust spacing between radio button and label */
+}
+
+.submit-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+span{
+    margin-left: 120px;
+    font-size: 25px;
+}
